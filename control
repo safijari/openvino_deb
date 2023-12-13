@@ -1,0 +1,9 @@
+Source: project
+Section: devel
+Priority: optional
+Maintainer: dummy
+Build-Depends: debhelper (>= 12)
+Package: openvino
+Architecture: amd64
+Version: 1.0.0
+Description: Basic package for pre-built openvino
