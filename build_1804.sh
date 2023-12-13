@@ -15,11 +15,11 @@ mv /tmp/l_openvino_toolkit_ubuntu18_2023.1.0.12185.47b736f63ed_x86_64 ${OVINO_DI
 mkdir -p ${TARGET_DIR}/DEBIAN
 mkdir -p ${TARGET_DIR}/usr/include/${PROJECT_NAME}
 mkdir -p ${TARGET_DIR}/usr/lib/${PROJECT_NAME}
-mkdir -p ${TARGET_DIR}/usr/share/${PROJECT_NAME}/cmake
+mkdir -p ${TARGET_DIR}/usr/lib/cmake/${PROJECT_NAME}
 
 cp -r ${RUNTIME_DIR}/include/* ${TARGET_DIR}/usr/include/
 cp -r ${RUNTIME_DIR}/lib/* ${TARGET_DIR}/usr/lib/
-cp -r ${RUNTIME_DIR}/cmake/* ${TARGET_DIR}/usr/share/cmake/${PROJECT_NAME}/
+cp -r ${RUNTIME_DIR}/cmake/* ${TARGET_DIR}/usr/lib/cmake/${PROJECT_NAME}/
 
 # Create the control file
 sed "s/Version: 1.0.0/Version: ${VERSION}/" control > ${TARGET_DIR}/DEBIAN/control
