@@ -3,6 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: dummy
 Build-Depends: debhelper (>= 12)
+Depends: libpugixml-dev (>= 1.8.1)
 Package: openvino
 Architecture: amd64
 Version: 1.0.0
