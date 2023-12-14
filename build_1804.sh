@@ -27,6 +27,6 @@ sed "s/Version: 1.0.0/Version: ${VERSION}/" control > ${TARGET_DIR}/DEBIAN/contr
 # Build the Debian package
 dpkg-deb --build ${TARGET_DIR}
 
-mv ${TARGET_DIR}/package_output.deb ${WORKING_DIR}/openvino_${VERSION}_1804.deb
+mv ${WORKING_DIR}/package_output.deb ${WORKING_DIR}/openvino_${VERSION}_1804_amd64.deb
 
 echo "Packaging complete. Find the Debian package in the '${TARGET_DIR}' directory."
